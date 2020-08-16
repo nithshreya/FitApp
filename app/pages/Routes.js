@@ -11,7 +11,7 @@ import ViewImageScreenNextNext from "../screens/ViewImageScreenNextNext";
 function Routes() {
   return (
     <Router>
-      <Stack key="root">
+      <Stack key="root" hideNavBar={true}>
         <Scene
         key="viewImageScreen"
         component={ViewImageScreen}
