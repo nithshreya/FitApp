@@ -21,6 +21,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "It's just a kind of prototype and the last screen is currently left for the chatbox."
   }
 }

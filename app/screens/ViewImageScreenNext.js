@@ -2,14 +2,13 @@ import React from "react";
 import { ImageBackground, StyleSheet, View, Text } from "react-native";
 import { Actions } from "react-native-router-flux";
 
-
 function ViewImageScreenNext(props) {
   const handleNext = () => {
     Actions.viewImageScreenNextNext();
     console.log("next");
   };
   const handleSkip = () => {
-    Actions.hippoChat()
+    Actions.hippoChat();
     console.log("skipped");
   };
   return (
@@ -22,8 +21,8 @@ function ViewImageScreenNext(props) {
       <View style={styles.des}>
         <Text style={styles.des1}>Start doing sports</Text>
         <Text style={styles.des2}>
-          Exercise can improve your stability and also your
-          "kinesthetic awarness"
+          Exercise can improve your stability and also your "kinesthetic
+          awarness"
         </Text>
       </View>
       <Text style={styles.skipButton} onPress={handleSkip}>
@@ -48,6 +47,7 @@ const styles = StyleSheet.create({
     paddingBottom: 15,
     // backgroundColor: "darkgrey",
     fontSize: 25,
+    color: "white",
   },
   skipButton: {
     // backgroundColor: "grey",
@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     paddingRight: 30,
     top: 70,
+    color: "white",
   },
   des: {
     width: "100%",
@@ -64,11 +65,13 @@ const styles = StyleSheet.create({
     bottom: "15%",
   },
   des1: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: 30,
+    color: "white",
   },
   des2: {
     fontSize: 20,
+    color: "white",
   },
 });
 

@@ -29,11 +29,7 @@ function Routes() {
           component={ViewImageScreenNextNext}
           title="ViewImageScreenNextNext"
         />
-        <Scene
-          key="hippoChat"
-          component={HippoChat}
-          title="HippoChat"
-        />
+        <Scene key="hippoChat" component={HippoChat} title="HippoChat" />
       </Stack>
     </Router>
   );

@@ -4,11 +4,11 @@ import { Actions } from "react-native-router-flux";
 
 function ViewImageScreenNextNext(props) {
   const handleNext = () => {
-    Actions.hippoChat()
+    Actions.hippoChat();
     console.log("next");
   };
   const handleSkip = () => {
-    Actions.hippoChat()
+    Actions.hippoChat();
     console.log("skipped");
   };
   return (
@@ -40,12 +40,14 @@ const styles = StyleSheet.create({
     resizeMode: "cover",
     justifyContent: "flex-end",
     alignItems: "flex-end",
+    resizeMode: "cover",
   },
   nextButton: {
     paddingRight: 30,
     paddingBottom: 15,
     // backgroundColor: "darkgrey",
     fontSize: 25,
+    color: "white",
   },
   skipButton: {
     // backgroundColor: "grey",
@@ -54,6 +56,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     paddingRight: 30,
     top: 70,
+    color: "white",
   },
   des: {
     width: "100%",
@@ -62,11 +65,13 @@ const styles = StyleSheet.create({
     bottom: "15%",
   },
   des1: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
     fontSize: 30,
+    color: "white",
   },
   des2: {
     fontSize: 20,
+    color: "white",
   },
 });
 

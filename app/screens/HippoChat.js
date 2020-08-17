@@ -13,7 +13,7 @@ const styles = {
   background: {
     flex: 1,
     alignItems: "center",
-
+    color: "white",
   },
   desc: {
     // width: "80%",
