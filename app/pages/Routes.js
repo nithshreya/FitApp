@@ -7,17 +7,18 @@ import { Router, Stack, Scene } from "react-native-router-flux";
 import ViewImageScreen from "../screens/ViewImageScreen";
 import ViewImageScreenNext from "../screens/ViewImageScreenNext";
 import ViewImageScreenNextNext from "../screens/ViewImageScreenNextNext";
+import HippoChat from "../screens/HippoChat";
 
 function Routes() {
   return (
     <Router>
       <Stack key="root" hideNavBar={true}>
         <Scene
-        key="viewImageScreen"
-        component={ViewImageScreen}
-        title="ViewImageScreen"
-        initial={true}
-      />
+          key="viewImageScreen"
+          component={ViewImageScreen}
+          title="ViewImageScreen"
+          initial={true}
+        />
         <Scene
           key="viewImageScreenNext"
           component={ViewImageScreenNext}
@@ -27,6 +28,11 @@ function Routes() {
           key="viewImageScreenNextNext"
           component={ViewImageScreenNextNext}
           title="ViewImageScreenNextNext"
+        />
+        <Scene
+          key="hippoChat"
+          component={HippoChat}
+          title="HippoChat"
         />
       </Stack>
     </Router>

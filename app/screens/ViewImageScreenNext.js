@@ -4,9 +4,13 @@ import { Actions } from "react-native-router-flux";
 
 
 function ViewImageScreenNext(props) {
-  const handlePress = () => {
+  const handleNext = () => {
     Actions.viewImageScreenNextNext();
-    console.log("text pressed");
+    console.log("next");
+  };
+  const handleSkip = () => {
+    Actions.hippoChat()
+    console.log("skipped");
   };
   return (
     <ImageBackground
@@ -22,10 +26,10 @@ function ViewImageScreenNext(props) {
           "kinesthetic awarness"
         </Text>
       </View>
-      <Text style={styles.skipButton} onPress={handlePress}>
+      <Text style={styles.skipButton} onPress={handleSkip}>
         Skip
       </Text>
-      <Text style={styles.nextButton} onPress={handlePress}>
+      <Text style={styles.nextButton} onPress={handleNext}>
         Next
       </Text>
     </ImageBackground>

@@ -1,9 +1,15 @@
 import React from "react";
 import { ImageBackground, StyleSheet, View, Text } from "react-native";
+import { Actions } from "react-native-router-flux";
 
 function ViewImageScreenNextNext(props) {
-  const handlePress = () => {
-    console.log("text pressed");
+  const handleNext = () => {
+    Actions.hippoChat()
+    console.log("next");
+  };
+  const handleSkip = () => {
+    Actions.hippoChat()
+    console.log("skipped");
   };
   return (
     <ImageBackground
@@ -18,10 +24,10 @@ function ViewImageScreenNextNext(props) {
           Know your workout plan and get healthy, fit and in shape
         </Text>
       </View>
-      <Text style={styles.skipButton} onPress={handlePress}>
+      <Text style={styles.skipButton} onPress={handleSkip}>
         Skip
       </Text>
-      <Text style={styles.nextButton} onPress={handlePress}>
+      <Text style={styles.nextButton} onPress={handleNext}>
         Next
       </Text>
     </ImageBackground>
